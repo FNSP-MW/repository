@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FNSP Repository</title>
     <style>
@@ -15,7 +14,6 @@
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -26,6 +24,10 @@
             text-align: center;
             color: #333;
         }
+        p {
+            text-align: center;
+            color: #555;
+        }
         .document-list {
             list-style: none;
             padding: 0;
@@ -33,20 +35,29 @@
         .document-list li {
             padding: 10px;
             border-bottom: 1px solid #ddd;
+            text-align: center;
         }
         .document-list a {
             text-decoration: none;
             color: #007BFF;
+            font-weight: bold;
         }
         .document-list a:hover {
             text-decoration: underline;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background: #007BFF;
             color: white;
             margin-top: 20px;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            color: #111;
         }
     </style>
 </head>
@@ -57,20 +68,22 @@
         
         <h2>Available Documents</h2>
         <ul class="document-list">
-        <li><a href="https://raw.githubusercontent.com/FNSP-MW/repository/docs/202404_Icon_Malawi-Final doc.pdf" download>202404_Icon_Malawi-Final doc.pdf (PDF)</a></li>
-
+            <li>
+                <a href="https://raw.githubusercontent.com/FNSP-MW/repository/docs/202404_Icon_Malawi-Final%20doc.pdf" download>
+                    202404_Icon_Malawi-Final doc.pdf (PDF)
+                </a>
+            </li>
         </ul>
         
         <footer>
-            
-            <footer style="font-size: 0.9em; margin-top: 40px; padding: 20px 0; border-top: 1px solid #ccc; color: #111;">
-  <p><strong>&copy; 2025 GIZ Food and Nutrition Security Programme</strong></p>
-
-  <p>This website is published by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH.</p>
-  <p>The Food and Nutrition Security Programme was implemeted in Malawi from 2015 until 2025 </p>
-  <p>under the the Special Initiative “Transformation of Agricultural and Food Systems” (SI AGER)</p>
-  <p>with funding from the German Ministry for Economic Cooperation and Development (BMZ). </p>
-</footer>
+            &copy; 2025 GIZ Food and Nutrition Security Programme
+            <div class="disclaimer">
+                <p><strong>Disclaimer / Impressum</strong></p>
+                <p>This website is published by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH.</p>
+                <p>The Food and Nutrition Security Programme was implemented in Malawi from 2015 until 2025</p>
+                <p>under the Special Initiative “Transformation of Agricultural and Food Systems” (SI AGER)</p>
+                <p>with funding from the German Ministry for Economic Cooperation and Development (BMZ).</p>
+            </div>
         </footer>
     </div>
 </body>
